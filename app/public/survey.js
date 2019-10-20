@@ -22,26 +22,26 @@ $(document).ready(function () {
 
         }
 
-        // if (   name === "" ||
-        //     picture === "" ||
-        //     box1 === "1 - 5" ||
-        //     box2 === "1 - 5" ||
-        //     box3 === "1 - 5" ||
-        //     box4 === "1 - 5" ||
-        //     box5 === "1 - 5" ||
-        //     box6 === "1 - 5" ||
-        //     box7 === "1 - 5" ||
-        //     box8 === "1 - 5" ||
-        //     box9 === "1 - 5" ||
-        //     box10 === "1 - 5") {
-        //     alert("Please fill out all forms!!")
+        if (   name === "" ||
+            picture === "" ||
+            box1 === "1 - 5" ||
+            box2 === "1 - 5" ||
+            box3 === "1 - 5" ||
+            box4 === "1 - 5" ||
+            box5 === "1 - 5" ||
+            box6 === "1 - 5" ||
+            box7 === "1 - 5" ||
+            box8 === "1 - 5" ||
+            box9 === "1 - 5" ||
+            box10 === "1 - 5") {
+            alert("Please fill out all forms!!")
 
-        // } else {
+        } else {
             $.post("/api/friends", input).then(function(data) {
                
             });
             
-        // }
+        }
 
       
 

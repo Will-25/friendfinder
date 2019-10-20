@@ -10,9 +10,9 @@ module.exports = function (app) {
   });
 
   app.post("/api/friends", function (req, res) {
-    var closestFriend = {};
+    var matchedFriend;
     var newFriend = req.body;
-    var previousTotalDifference;
+    var previousTotalDifference = 40;
     for (var i = 0; i < friendsData.length; i++) {
 
       var currentFriend = friendsData[i]
@@ -22,25 +22,16 @@ module.exports = function (app) {
         var friendScores = currentFriend.scores[j]
         var difference = Math.abs(friendScores - parseInt(newFriend.scores[j]))
         totalDifference = totalDifference + difference
-        previousTotalDifference = totalDifference
-        if (previousTotalDifference > totalDifference) {
-          totalDifference = previousTotalDifference
-          console.log(totalDifference)
-        }
-        if (totalDifference <= previousTotalDifference) {
-          closestFriend = currentFriend
-          
-        }
+        
 
       }
-
+     if (totalDifference < previousTotalDifference) {
+       previousTotalDifference = totalDifference
+       matchedFriend = currentFriend
+     }
+     
     }
-
-    // if (totalDifference <= previousTotalDifference) {
-    //   closestFriend = currentFriend
-    //   console.log(closestFriend)
-
-    // }
+    res.json(matchedFriend);
 
     friendsData.push(newFriend)
 
