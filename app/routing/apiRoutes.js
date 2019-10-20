@@ -8,31 +8,22 @@ module.exports = function (app) {
 
 
   });
+
   app.post("/api/friends", function (req, res) {
-    var fren = req.body
-    var numbers = req.body.scores
-    var parse = parseInt(numbers)
-    var userScore = []
-    friendsData.push(fren)
-    console.log(friendsData)
-    // for (var i = 0; i < numbers.length; i++) {
-    //   var newNum = numbers[i]
-    //   userScore.push(parseInt(newNum));
+    var newFriend = req.body
+    var count;
+    for (var i = 0; i < friendsData.length; i++) {
+      count = 0;
+      for (var j = 0; j < friendsData[count].scores.length; j++) {
+        var friendScores = friendsData[count].scores[j]
+      
+        console.log(Math.abs(friendScores - parseInt(newFriend.scores)))
+      }
+      count++
+    }
+    friendsData.push(newFriend)
 
-    // }
-    // // console.log(userScore);
 
-    // for (var i = 0; i < friendsData.length; i++) {
-    //   var friendScore = friendsData[i].scores
-     
-    //     for (var j = 0; j < friendScore.length; j++){
-    //       console.log(friendScore[j])
-    //     }
-    // }
-
-    
-    
-  
 
   });
 
