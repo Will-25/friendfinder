@@ -1,7 +1,7 @@
 var friendsArray = [
     {
         "name" : "Mr. Krabs",
-        "photo" : "https://placeholdit.com",
+        "photo" : "https://www.meme-arsenal.com/memes/7894779fdeb9b421942553c85da1fc43.jpg",
         "scores" : [
             5,
             3,
@@ -18,7 +18,7 @@ var friendsArray = [
 
     {
         "name" : "Hey Arnold",
-        "photo" : "https://placeholdit.com",
+        "photo" : "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/HeyArnold%21.jpg/150px-HeyArnold%21.jpg",
         "scores" : [
             3, 
             2,
@@ -35,7 +35,7 @@ var friendsArray = [
 
     {
         "name" : "Cosmo",
-        "photo" : "https://placeholdit.com",
+        "photo" : "https://vignette.wikia.nocookie.net/fairlyoddfanon/images/1/1a/Cosmo_Stock_Image.png/revision/latest?cb=20180509234547",
         "scores" : [
             4,
             2,
@@ -52,7 +52,7 @@ var friendsArray = [
 
     {
         "name" : "That Guy From Rocket Power",
-        "photo" : "https://placeholdit.com",
+        "photo" : "https://vignette.wikia.nocookie.net/homiestuck/images/b/b3/Tito.png/revision/latest?cb=20190420042453",
         "scores" : [
             3,
             1,
@@ -69,7 +69,7 @@ var friendsArray = [
 
     {
         "name" : "Wanda",
-        "photo" : "https://placeholdit.com",
+        "photo" : "https://vignette.wikia.nocookie.net/fairlyoddfanon/images/7/7e/Wanda_flash_animation.png/revision/latest?cb=20180826042321",
         "scores" : [
             4,
             2,
