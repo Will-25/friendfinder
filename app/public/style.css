@@ -2,3 +2,31 @@
     height: 250px;
     width: 250px;
 }
+
+.container {
+    margin-top: 150px;
+}
+
+#body {
+    background-image: url("https://i.pinimg.com/originals/38/0b/c3/380bc328c86378633b1ada188e93d117.jpg");
+    background-size: 100%;
+}
+
+#body2 {
+    background-image: url("https://i.pinimg.com/originals/38/0b/c3/380bc328c86378633b1ada188e93d117.jpg");
+    background-size: 150%;
+}
+
+
+.container2 {
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+#submit {
+    margin:auto;
+}

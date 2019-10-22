@@ -37,13 +37,13 @@ $(document).ready(function () {
             alert("Please fill out all forms!!")
 
         } else {
-            // data-toggle="modal"
-            //             data-target="#modal"
+            
             $("#submit").attr("data-toggle", "modal")
             $("#submit").attr("data-target", "#modal")
+
             $.post("/api/friends", input).then(function(data) {
                 $("#friendMatch").text("You matched with " + data.name)
-                $(".modal-body").html("<img id='friendImage' src='" + data.photo + "'>")
+                $(".modal-body").html("<img id='friendImage' alt='no working picture uploaded!' src='" + data.photo + "'>")
                
             });
 
