@@ -6,3 +6,5 @@ Friend Finder
 - When the submit button is clicked, the users input is sent to API and is also matched against all other answers. A function is called to compare numbers between the user, and all the entries in the API. Depending on which answers were given, a friend will be given based on who had the least amount of difference in their numbers.
 
 - As long as the server remains running (the window isn't closed out) the API including the users data will be persistent, meaning you can take the survey again and potentially match with yourself.
+
+https://friend-finder122.herokuapp.com/
