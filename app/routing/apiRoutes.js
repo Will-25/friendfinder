@@ -22,8 +22,6 @@ module.exports = function (app) {
         var friendScores = currentFriend.scores[j]
         var difference = Math.abs(friendScores - parseInt(newFriend.scores[j]))
         totalDifference = totalDifference + difference
-
-
       }
       if (totalDifference < previousTotalDifference) {
         previousTotalDifference = totalDifference
@@ -32,11 +30,7 @@ module.exports = function (app) {
 
     }
     res.json(matchedFriend);
-    
     friendsData.push(newFriend);
-
-
-
   });
 
 };
