@@ -24,7 +24,6 @@ module.exports = function (app) {
         previousTotalDifference = totalDifference
         matchedFriend = currentFriend
       }
-
     }
     res.json(matchedFriend);
     friendsData.push(newFriend);
