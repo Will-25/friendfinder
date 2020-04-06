@@ -22,7 +22,8 @@ $(document).ready(function () {
 
         }
 
-        if (   name === "" ||
+        if (   
+            name === "" ||
             picture === "" ||
             box1 === "1 - 5" ||
             box2 === "1 - 5" ||
@@ -46,17 +47,6 @@ $(document).ready(function () {
                 $(".modal-body").html("<img id='friendImage' alt='no working picture uploaded!' src='" + data.photo + "'>")
                
             });
-
-            
-           
         }
-
-      
-
-
-
     });
-
-
-
 });
